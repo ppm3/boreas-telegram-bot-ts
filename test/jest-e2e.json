@@ -1,9 +1,17 @@
 {
-  "moduleFileExtensions": ["js", "json", "ts"],
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
   "rootDir": ".",
   "testEnvironment": "node",
   "testRegex": ".e2e-spec.ts$",
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "bot/telegram-bot/(.*)": "<rootDir>/../libs/telegram-bot/src/$1",
+    "bot/telegram-bot": "<rootDir>/../libs/telegram-bot/src"
   }
 }

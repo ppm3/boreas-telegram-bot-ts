@@ -5,8 +5,8 @@ const mongoHost = process.env.MONGO_DB_DB || 'localhost';
 const mongoPort = process.env.MONGO_DB_PORT || '6000';
 
 export default () => ({
-    mongo: {
-        uri: `mongodb://${mongoUser}:${mongoPass}@${mongoHost}:${mongoPort}`,
-        db: process.env.MONGO_DB_DB || 'noto-telegram-bot',
-      },
+  mongo: {
+    uri: `mongodb://${mongoUser}:${mongoPass}@${mongoHost}:${mongoPort}`,
+    db: process.env.MONGO_DB_DB || 'noto-bot',
+  },
 });
